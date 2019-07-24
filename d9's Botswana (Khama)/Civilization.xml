@@ -5,7 +5,7 @@
 			<Type>CIVILIZATION_D9_BOTSWANA</Type>
 			<Description>TXT_KEY_CIV_D9_BOTSWANA_DESC</Description>
 			<Civilopedia></Civilopedia>
-			<CivilopediaTag>TXT_KEY_CIV5_UNITEDSTATES</CivilopediaTag>
+			<CivilopediaTag>TXT_KEY_CIV_D9_BOTSWANA</CivilopediaTag>
 			<Strategy></Strategy>
 			<Playable>1</Playable>
 			<AIPlayable>1</AIPlayable>
@@ -386,159 +386,159 @@
 		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_FACTOID_HEADING">
 			<Text>Botswana Factoid</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_FACTOID_TEXT">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_FACTOID_TEXT">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_1">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_1">
 			<Text>History</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_10">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_10">
 			<Text>The American Civil War</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_11">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_11">
 			<Text>Westward Ho</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_12">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_12">
 			<Text>The Early 20th Century - The World Intrudes</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_13">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_13">
 			<Text>The Great Depression</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_14">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_14">
 			<Text>The Second World War</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_15">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_15">
 			<Text>The US at War</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_16">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_16">
 			<Text>America in the Second Half of the 20th Century</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_17">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_17">
 			<Text>The Cold War</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_18">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_18">
 			<Text>The War Against Terrorism</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_19">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_19">
 			<Text>The US in the Future</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_2">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_2">
 			<Text>Geography and Climate</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_3">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_3">
 			<Text>The Native Americans</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_4">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_4">
 			<Text>Enter the Europeans</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_5">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_5">
 			<Text>The American Revolution</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_6">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_6">
 			<Text>George Washington</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_7">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_7">
 			<Text>The Louisiana Purchase</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_8">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_8">
 			<Text>The War of 1812</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_9">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_HEADING_9">
 			<Text>The Mexican-American War</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_1">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_1">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_10">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_10">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_11">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_11">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_12">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_12">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_13">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_13">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_14">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_14">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_15">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_15">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_16">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_16">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_17">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_17">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_18">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_18">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_19">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_19">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_2">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_2">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_3">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_3">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_4">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_4">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_5">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_5">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_6">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_6">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_7">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_7">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_8">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_8">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_9">
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TEXT_9">
 			<Text>
 				<!-- Add Civilopedia text here -->
 			</Text>
@@ -554,7 +554,7 @@
 			<Text>American</Text>
 			<Gender>neuter:an</Gender>
 		</Row>
-		<Row Tag="TXT_KEY_CIV5_DAWN_UNITEDSTATES_TEXT">
+		<Row Tag="TXT_KEY_CIV5_DAWN_D9_BOTSWANA_TEXT">
 			<Text>Welcome, President Khama! You lead the industrious Botswanan civilization. Among its fellow newly-independent African states, Botswana was among the worst-off. However, in your tenure, you introduced programs building infrastructure, advancing industry, and attacking corruption, all while maintaining a program of civil liberties unequaled among your peers. Today, Botswana is among the best-off countries in Africa, with a strong democracy and economy.[NEWLINE][NEWLINE]In this new age, Botswana needs you, President Khama. Can you lead the Batswana people to greatness? Can you build a civilization that will stand the test of time?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_0">

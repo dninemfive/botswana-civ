@@ -105,30 +105,30 @@
 
   <Unit_AITypes>
     <Row>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <UnitAIType>UNITAI_GENERAL</UnitAIType>
     </Row>
   </Unit_AITypes>
   <Unit_Builds>
     <Row>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <BuildType>BUILD_CITADEL</BuildType>
     </Row>
   </Unit_Builds>
   <Unit_FreePromotions>
     <Row>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <PromotionType>PROMOTION_GREAT_GENERAL</PromotionType>
     </Row>
   </Unit_FreePromotions>
   <Unit_Flavors>
     <Row>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <FlavorType>FLAVOR_OFFENSE</FlavorType>
       <Flavor>1</Flavor>
     </Row>
     <Row>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <FlavorType>FLAVOR_DEFENSE</FlavorType>
       <Flavor>1</Flavor>
     </Row>
@@ -189,12 +189,12 @@
   <UnitPromotions_CivilianUnitType>
     <Row>
       <PromotionType>PROMOTION_FAST_GENERAL</PromotionType>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
     </Row>
   </UnitPromotions_CivilianUnitType>
   <UnitGameplay2DScripts>
     <Row>
-      <UnitType>UNIT_GREAT_GENERAL</UnitType>
+      <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <SelectionSound>AS2D_BUILD_UNIT</SelectionSound>
       <FirstSelectionSound>AS2D_BUILD_UNIT</FirstSelectionSound>
     </Row>

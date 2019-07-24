@@ -165,7 +165,7 @@
       <ArtInfoCulturalVariation>0</ArtInfoCulturalVariation>
       <ArtInfoEraVariation>0</ArtInfoEraVariation>
       <ArtInfoRandomVariation>0</ArtInfoRandomVariation>
-	  <ShowInPedia>0</ShowInPedia>
+	  <!--ShowInPedia>0</ShowInPedia-->
     </Row>
 	<Row>
       <Type>BUILDING_D9_BOTS_HAPPDUMMY</Type>
@@ -319,7 +319,7 @@
       <ArtInfoCulturalVariation>0</ArtInfoCulturalVariation>
       <ArtInfoEraVariation>0</ArtInfoEraVariation>
       <ArtInfoRandomVariation>0</ArtInfoRandomVariation>
-	  <ShowInPedia>0</ShowInPedia>
+	  <!--ShowInPedia>0</ShowInPedia-->
     </Row>
   </Buildings>
   <Building_YieldChanges>
@@ -339,17 +339,11 @@
     <Row Tag="TXT_KEY_BUILDING_D9_BOTS_FOODDUMMY_STRATEGY">
       <Text>Dummy producing Food for Botswana's Pula UA. If you can see this, please inform dninemfive.</Text>
     </Row>
-    <Row Tag="TXT_KEY_BUILDING_D9_BOTS_FOODDUMMY_STRATEGY">
-      <Text>Dummy producing Food for Botswana's Pula UA. If you can see this, please inform dninemfive.</Text>
-    </Row>
 	<Row Tag="TXT_KEY_BUILDING_D9_BOTS_HAPPDUMMY_DESC">
       <Text>Pula Happiness</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_D9_BOTS_HAPPDUMMY_PEDIA">
       <Text><!-- Add Civilopedia text here --></Text>
-    </Row>
-    <Row Tag="TXT_KEY_BUILDING_D9_BOTS_HAPPDUMMY_STRATEGY">
-      <Text>Dummy producing Happiness for Botswana's Pula UA. If you can see this, please inform dninemfive.</Text>
     </Row>
     <Row Tag="TXT_KEY_BUILDING_D9_BOTS_HAPPDUMMY_STRATEGY">
       <Text>Dummy producing Happiness for Botswana's Pula UA. If you can see this, please inform dninemfive.</Text>
