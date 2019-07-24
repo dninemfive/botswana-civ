@@ -33,14 +33,16 @@ function d9BotswanaPula(player)
 			local ct = 0
 			-- Chrisy15 credits this to Bane_
 			for i = 0, city:GetNumCityPlots() - 1, 1 do
+				print("      inside for loop: " .. i)
 				local plot = city:GetCityIndexPlot(i)
 				if (plot ~= nil) and (plot:GetWorkingCity() == city) and plot:IsBeingWorked() and plot:IsFreshWater() then
 					ct = ct + 1 -- I miss ct++ :(
 				end
 			end
+			print("end for loop")
 			-- give city food dummies equal to floor(count/2)
-			city:SetNumRealBuilding(math.floor(ct/foodDiv))
-			print("    gave " .. city:GetName() .. math.floor(ct/foodDiv) " food (ct = " .. ct .. ")")
+			city:SetNumRealBuilding(food, math.floor(ct/foodDiv))
+			print("    gave " .. city:GetName() .. math.floor(ct/foodDiv) .. " food (ct = " .. ct .. ")")
 			-- if city is growing, give 2 happiness dummy
 			if city:FoodDifference() > 0 then
 				print("City is growing, giving happiness...")
@@ -61,12 +63,15 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 		-- iterate through all units, grant ZOC promotions to units stacked with or adjacent to Kgosi, heal if Kgosi in hills
 		for unit in player:Units() do			
 			if unit:GetUnitCombatType() == kgosi then
+				print("Kgosi found")
 				local isInHills = unit:GetPlot():IsHills()
+				print("  isInHills = " .. isInHills)
 				for other in adjacentUnits(unit) do
 					other:SetHasPromotion(ignoreZOC, true)
 					if isInHills then
 						other:ChangeDamage(healAmount)
 					end
+					-- if 1 then print("1 equals true")
 				end
 			end
 		end
