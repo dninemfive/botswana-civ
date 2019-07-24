@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_D9_KGOSI_ZOC</Type>
+			<Description>TXT_KEY_PROMOTION_D9_KGOSI_ZOC</Description>
+			<Help>TXT_KEY_PROMOTION_D9_KGOSI_ZOC_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PortraitIndex>5</PortraitIndex> <!-- TODO: change -->
+			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_D9_KGOSI_ZOC</PediaEntry>
+			<CannotBeChosen>true</CannotBeChosen>
+			<IgnoreZOC>true</IgnoreZOC>
+		</Row>
+	</UnitPromotions>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_D9_KGOSI_ZOC">
+			<Text>Ignores Zone of Control</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_D9_KGOSI_ZOC_HELP">
+			<Text>Ignore enemy Zones of Control.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

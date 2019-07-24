@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Civilizations>
+		<Row>
+			<Type>CIVILIZATION_D9_BOTSWANA</Type>
+			<Description>TXT_KEY_CIV_D9_BOTSWANA_DESC</Description>
+			<Civilopedia></Civilopedia>
+			<CivilopediaTag>TXT_KEY_CIV5_UNITEDSTATES</CivilopediaTag>
+			<Strategy></Strategy>
+			<Playable>1</Playable>
+			<AIPlayable>1</AIPlayable>
+			<ShortDescription>TXT_KEY_CIV_D9_BOTSWANA_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_D9_BOTSWANA_ADJECTIVE</Adjective>
+			<DefaultPlayerColor>PLAYERCOLOR_D9_BOTSWANA</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_D9_BOTSWANA</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<ArtStyleSuffix>_AFRI</ArtStyleSuffix>
+			<ArtStylePrefix>AFRICAN</ArtStylePrefix>
+			<DerivativeCiv></DerivativeCiv>
+			<PortraitIndex>0</PortraitIndex>
+			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<MapImage>MapAmerica512.dds</MapImage>
+			<DawnOfManQuote>TXT_KEY_CIV5_DAWN_D9_BOTSWANA_TEXT</DawnOfManQuote>
+			<DawnOfManImage>DOM_Washington.dds</DawnOfManImage>
+			<DawnOfManAudio>AS2D_DOM_SPEECH_UNITED_STATES</DawnOfManAudio>
+			<SoundtrackTag></SoundtrackTag>
+		</Row>
+	</Civilizations>
+
+	<!-- Civilization_BuildingClassOverrides -->
+	<Civilization_CityNames>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_0</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_1</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_2</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_3</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_4</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_5</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_6</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_7</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_8</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_9</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_10</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_11</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_12</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_13</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_14</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_15</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_16</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_17</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_18</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_19</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_20</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_21</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_22</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_23</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_24</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_25</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_26</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_27</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_28</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_29</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_30</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_31</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_32</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_33</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_34</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_35</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_36</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_37</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_38</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_39</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_40</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_41</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_42</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_43</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_44</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_45</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_46</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_47</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_48</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_49</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_50</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_51</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_52</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_53</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_54</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_55</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_56</CityName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<CityName>TXT_KEY_CITY_NAME_D9_BOTSWANA_57</CityName>
+		</Row>
+	</Civilization_CityNames>
+	<!-- Civilization_DisableTechs -->
+	<Civilization_FreeBuildingClasses>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+		</Row>
+	</Civilization_FreeBuildingClasses>
+	<Civilization_FreeTechs>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<TechType>TECH_AGRICULTURE</TechType>
+		</Row>
+	</Civilization_FreeTechs>
+	<Civilization_FreeUnits>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+			<UnitAIType>UNITAI_SETTLE</UnitAIType>
+			<Count>1</Count>
+		</Row>
+	</Civilization_FreeUnits>
+	<Civilization_Leaders>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<LeaderheadType>LEADER_KHAMA</LeaderheadType>
+		</Row>
+	</Civilization_Leaders>
+	<Civilization_Religions>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<ReligionType>RELIGION_PROTESTANTISM</ReligionType> <!-- nts: SQL patch for HR changing this to Baptism (or a native religion, idk) -->
+		</Row>
+	</Civilization_Religions>
+	<Civilization_SpyNames>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_0</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_1</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_2</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_3</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_4</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_5</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_6</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_7</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_8</SpyName>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<SpyName>TXT_KEY_SPY_NAME_D9_BOTSWANA_9</SpyName>
+		</Row>
+	</Civilization_SpyNames>
+	<Civilization_UnitClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
+			<UnitClassType>UNITCLASS_GREAT_GENERAL</UnitClassType>
+			<UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<!-- Civilization_Start_Along_Ocean -->
+	<!-- Civilization_Start_Along_River --> <!-- yes please -->
+	<!-- Civilization_Start_Region_Priority --> <!-- arid -->
+	<!-- Civilization_Start_Region_Avoid --> <!-- tundra -->
+	<!-- Civilization_Start_Place_First_Along_Ocean -->
+
+	<PlayerColors>
+		<Row>
+			<Type>PLAYERCOLOR_D9_BOTSWANA</Type>
+			<PrimaryColor>COLOR_PLAYER_D9_BOTSWANA_ICON</PrimaryColor>
+			<SecondaryColor>COLOR_PLAYER_D9_BOTSWANA_BACKGROUND</SecondaryColor>
+			<TextColor>COLOR_PLAYER_WHITE_TEXT</TextColor>
+		</Row>
+	</PlayerColors>
+	<Colors>
+		<Row>
+			<Type>COLOR_PLAYER_D9_BOTSWANA_ICON</Type>
+			<Red>0</Red>
+			<Green>0</Green>
+			<Blue>0</Blue>
+			<Alpha>1.0</Alpha>
+		</Row>
+	</Colors>
+	<Colors>
+		<Row>
+			<Type>COLOR_PLAYER_D9_BOTSWANA_BACKGROUND</Type>
+			<Red>0.4588</Red>
+			<Green>0.6667</Green>
+			<Blue>0.8588</Blue>
+			<Alpha>1.0</Alpha>
+		</Row>
+	</Colors>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_DESC">
+			<Text>Republic of Botswana</Text>
+			<Gender>neuter:an</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_FACTOID_HEADING">
+			<Text>Botswana Factoid</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_FACTOID_TEXT">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_10">
+			<Text>The American Civil War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_11">
+			<Text>Westward Ho</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_12">
+			<Text>The Early 20th Century - The World Intrudes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_13">
+			<Text>The Great Depression</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_14">
+			<Text>The Second World War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_15">
+			<Text>The US at War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_16">
+			<Text>America in the Second Half of the 20th Century</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_17">
+			<Text>The Cold War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_18">
+			<Text>The War Against Terrorism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_19">
+			<Text>The US in the Future</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_2">
+			<Text>Geography and Climate</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_3">
+			<Text>The Native Americans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_4">
+			<Text>Enter the Europeans</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_5">
+			<Text>The American Revolution</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_6">
+			<Text>George Washington</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_7">
+			<Text>The Louisiana Purchase</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_8">
+			<Text>The War of 1812</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_HEADING_9">
+			<Text>The Mexican-American War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_1">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_10">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_11">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_12">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_13">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_14">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_15">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_16">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_17">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_18">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_19">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_2">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_3">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_4">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_5">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_6">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_7">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_8">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_9">
+			<Text>
+				<!-- Add Civilopedia text here -->
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_TITLE">
+			<Text>Botswana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_SHORT_DESC">
+			<Text>Botswanan</Text>
+			<Gender>neuter:an</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_ADJECTIVE">
+			<Text>American</Text>
+			<Gender>neuter:an</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_DAWN_UNITEDSTATES_TEXT">
+			<Text>Welcome, President Khama! You lead the industrious Botswanan civilization. Among its fellow newly-independent African states, Botswana was among the worst-off. However, in your tenure, you introduced programs building infrastructure, advancing industry, and attacking corruption, all while maintaining a program of civil liberties unequaled among your peers. Today, Botswana is among the best-off countries in Africa, with a strong democracy and economy.[NEWLINE][NEWLINE]In this new age, Botswana needs you, President Khama. Can you lead the Batswana people to greatness? Can you build a civilization that will stand the test of time?</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_0">
+			<Text>Gaborone</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_1">
+			<Text>Francistown</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_2">
+			<Text>Molepolole</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_3">
+			<Text>Serowe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_4">
+			<Text>Selibe Phikwe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_5">
+			<Text>Maun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_6">
+			<Text>Kanye</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_7">
+			<Text>Mahalapye</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_8">
+			<Text>Mogoditshane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_9">
+			<Text>Mochudi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_10">
+			<Text>Lobatse</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_11">
+			<Text>Palapye</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_12">
+			<Text>Ramotswa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_13">
+			<Text>Moshupa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_14">
+			<Text>Tlokweng</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_15">
+			<Text>Bobonong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_16">
+			<Text>Thamaga</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_17">
+			<Text>Letlhakane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_18">
+			<Text>Tonota</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_19">
+			<Text>Mmadinare</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_20">
+			<Text>Jwaneng</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_21">
+			<Text>Tutume</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_22">
+			<Text>Gabane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_23">
+			<Text>Shoshong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_24">
+			<Text>Ghanzi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_25">
+			<Text>Letlhakeng</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_26">
+			<Text>Orapa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_27">
+			<Text>Kopong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_28">
+			<Text>Mmopane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_29">
+			<Text>Kasane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_30">
+			<Text>Shakawe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_31">
+			<Text>Lentsweletau</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_32">
+			<Text>Molapowabojang</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_33">
+			<Text>Gumare</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_34">
+			<Text>Tshabong</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_35">
+			<Text>Lerala</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_36">
+			<Text>Mmathethe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_37">
+			<Text>Gweta</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_38">
+			<Text>Mathangwane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_39">
+			<Text>Mmankgodi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_40">
+			<Text>Maitengwe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_41">
+			<Text>Rakops</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_42">
+			<Text>Dukwi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_43">
+			<Text>Mopipi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_44">
+			<Text>Etsha</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_45">
+			<Text>Otse</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_46">
+			<Text>Sefophe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_47">
+			<Text>Sehithwa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_48">
+			<Text>Nata</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_49">
+			<Text>Tumasera</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_50">
+			<Text>Seleka</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_51">
+			<Text>Moiyabana</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_52">
+			<Text>Lotlhakane</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_53">
+			<Text>Metsimotlhaba</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_54">
+			<Text>Bokaa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_55">
+			<Text>Tati Siding</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_56">
+			<Text>Tsetsebjwe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_57">
+			<Text>Hukuntsi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_0">
+			<Text>Cousin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_1">
+			<Text>Felix</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_2">
+			<Text>Dennis</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_3">
+			<Text>Edward</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_4">
+			<Text>Prof. Rex</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_5">
+			<Text>Eliza</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_6">
+			<Text>Mary</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_7">
+			<Text>Virginia</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_8">
+			<Text>Scarlett</Text>
+			<Gender>feminine</Gender>
+		</Row>
+		<Row Tag="TXT_KEY_SPY_NAME_D9_BOTSWANA_9">
+			<Text>Barbara</Text>
+			<Gender>feminine</Gender>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{1d8140b0-768f-4a4e-899b-037eede1b648}</ProjectGuid>
+    <Name>d9's Botswana (Seretse Khama)</Name>
+    <Guid>a38e9a44-ee38-464f-819f-e6f9957413b7</Guid>
+    <ModVersion>1</ModVersion>
+    <Stability>Alpha</Stability>
+    <Teaser>Adds Botswana, led by Seretse Khama, to the game!
+
+UA (Pula!): +1 Food on tiles with Fresh Water. Growing cities generate 2 H</Teaser>
+    <Description>Adds Botswana, led by Seretse Khama, to the game!
+
+UA (Pula!): +1 Food for every two Fresh Water tiles worked by each city. Growing cities generate 2 Happiness, and 1/3 of your excess Happiness is converted to Culture.
+
+UU: Kgosi (Great General): +1 Sight. Grants stacked and adjacent units the ability to ignore Zone of Control and, if starting its turn in Hills, heals them. 
+
+UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to at least two Conservation Areas. +1 Food if on Plains, Marsh, or Flood Plains, or adjacent to a Lake. +1 Gold and Culture if adjacent to a Natural Wonder. +2 Gold if on certain Bonus Resources.</Description>
+    <Authors>dninemfive</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>d9's Botswana (Khama)</AssemblyName>
+    <RootNamespace>d9's Botswana (Khama)</RootNamespace>
+    <ModReferences />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+    <DeployMod>false</DeployMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+    <DeployMod>true</DeployMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Civilization.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Kgosi.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>
