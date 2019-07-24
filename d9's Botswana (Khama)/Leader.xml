@@ -2,24 +2,24 @@
 <GameData>
   <Leaders>
     <Row>
-      <Type>LEADER_WASHINGTON</Type>
-      <Description>TXT_KEY_LEADER_WASHINGTON</Description>
-      <Civilopedia>TXT_KEY_LEADER_WASHINGTON_PEDIA</Civilopedia>
-      <CivilopediaTag>TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE</CivilopediaTag>
+      <Type>LEADER_D9_KHAMA</Type>
+      <Description>TXT_KEY_LEADER_D9_KHAMA</Description>
+      <Civilopedia>TXT_KEY_LEADER_D9_KHAMA_PEDIA</Civilopedia>
+      <CivilopediaTag>TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA</CivilopediaTag> <!-- TODO: change this (and all other civiliopedia stuff/remaining other-civ leftovers) -->
       <ArtDefineTag>Washington_Scene.xml</ArtDefineTag>
-      <VictoryCompetitiveness>4</VictoryCompetitiveness>
+      <VictoryCompetitiveness>5</VictoryCompetitiveness>
       <WonderCompetitiveness>3</WonderCompetitiveness>
-      <MinorCivCompetitiveness>5</MinorCivCompetitiveness>
-      <Boldness>7</Boldness>
-      <DiploBalance>6</DiploBalance>
-      <WarmongerHate>7</WarmongerHate>
+      <MinorCivCompetitiveness>3</MinorCivCompetitiveness>
+      <Boldness>5</Boldness>
+      <DiploBalance>5</DiploBalance>
+      <WarmongerHate>8</WarmongerHate>
       <WorkAgainstWillingness>0</WorkAgainstWillingness>
-      <WorkWithWillingness>0</WorkWithWillingness>
-      <DenounceWillingness>4</DenounceWillingness>
-      <DoFWillingness>6</DoFWillingness>
+      <WorkWithWillingness>3</WorkWithWillingness>
+      <DenounceWillingness>2</DenounceWillingness>
+      <DoFWillingness>7</DoFWillingness>
       <Loyalty>6</Loyalty>
-      <Neediness>7</Neediness>
-      <Forgiveness>7</Forgiveness>
+      <Neediness>5</Neediness>
+      <Forgiveness>8</Forgiveness>
       <Chattiness>5</Chattiness>
       <Meanness>4</Meanness>
       <PortraitIndex>0</PortraitIndex>
@@ -29,345 +29,336 @@
 
   <Leader_MajorCivApproachBiases>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MajorCivApproachType>MAJOR_CIV_APPROACH_WAR</MajorCivApproachType>
-      <Bias>4</Bias>
+      <Bias>2</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MajorCivApproachType>MAJOR_CIV_APPROACH_HOSTILE</MajorCivApproachType>
       <Bias>3</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MajorCivApproachType>MAJOR_CIV_APPROACH_DECEPTIVE</MajorCivApproachType>
-      <Bias>5</Bias>
+      <Bias>3</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MajorCivApproachType>MAJOR_CIV_APPROACH_GUARDED</MajorCivApproachType>
-      <Bias>6</Bias>
-    </Row>
-    <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <MajorCivApproachType>MAJOR_CIV_APPROACH_AFRAID</MajorCivApproachType>
-      <Bias>4</Bias>
-    </Row>
-    <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <MajorCivApproachType>MAJOR_CIV_APPROACH_FRIENDLY</MajorCivApproachType>
       <Bias>7</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <MajorCivApproachType>MAJOR_CIV_APPROACH_AFRAID</MajorCivApproachType>
+      <Bias>3</Bias>
+    </Row>
+    <Row>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <MajorCivApproachType>MAJOR_CIV_APPROACH_FRIENDLY</MajorCivApproachType>
+      <Bias>8</Bias>
+    </Row>
+    <Row>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MajorCivApproachType>MAJOR_CIV_APPROACH_NEUTRAL</MajorCivApproachType>
-      <Bias>5</Bias>
+      <Bias>6</Bias>
     </Row>
   </Leader_MajorCivApproachBiases>
   <Leader_MinorCivApproachBiases>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MinorCivApproachType>MINOR_CIV_APPROACH_IGNORE</MinorCivApproachType>
       <Bias>6</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MinorCivApproachType>MINOR_CIV_APPROACH_FRIENDLY</MinorCivApproachType>
       <Bias>7</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MinorCivApproachType>MINOR_CIV_APPROACH_PROTECTIVE</MinorCivApproachType>
       <Bias>5</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MinorCivApproachType>MINOR_CIV_APPROACH_CONQUEST</MinorCivApproachType>
-      <Bias>4</Bias>
+      <Bias>3</Bias>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <MinorCivApproachType>MINOR_CIV_APPROACH_BULLY</MinorCivApproachType>
-      <Bias>6</Bias>
+      <Bias>3</Bias>
     </Row>
   </Leader_MinorCivApproachBiases>
   <Leader_Flavors>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_OFFENSE</FlavorType>
-      <Flavor>6</Flavor>
+      <Flavor>4</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_DEFENSE</FlavorType>
       <Flavor>8</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
-      <Flavor>6</Flavor>
+      <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_RECON</FlavorType>
-      <Flavor>8</Flavor>
+      <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_RANGED</FlavorType>
-      <Flavor>5</Flavor>
+      <Flavor>6</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_MOBILE</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_NAVAL</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
       <Flavor>4</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_AIR</FlavorType>
-      <Flavor>6</Flavor>
-    </Row>
-    <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <FlavorType>FLAVOR_EXPANSION</FlavorType>
       <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <FlavorType>FLAVOR_EXPANSION</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_GROWTH</FlavorType>
-      <Flavor>3</Flavor>
+      <Flavor>8</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
-      <Flavor>5</Flavor>
+      <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
-      <Flavor>5</Flavor>
+      <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_PRODUCTION</FlavorType>
-      <Flavor>5</Flavor>
+      <Flavor>6</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_GOLD</FlavorType>
       <Flavor>6</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_SCIENCE</FlavorType>
       <Flavor>6</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_CULTURE</FlavorType>
       <Flavor>6</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_HAPPINESS</FlavorType>
-      <Flavor>7</Flavor>
+      <Flavor>8</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
-      <Flavor>6</Flavor>
+      <Flavor>8</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_WONDER</FlavorType>
-      <Flavor>5</Flavor>
+      <Flavor>3</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_RELIGION</FlavorType>
       <Flavor>4</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_DIPLOMACY</FlavorType>
       <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_SPACESHIP</FlavorType>
-      <Flavor>8</Flavor>
+      <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_WATER_CONNECTION</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_NUKE</FlavorType>
-      <Flavor>6</Flavor>
-    </Row>
-    <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <FlavorType>FLAVOR_USE_NUKE</FlavorType>
-      <Flavor>8</Flavor>
-    </Row>
-    <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <FlavorType>FLAVOR_ESPIONAGE</FlavorType>
       <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <FlavorType>FLAVOR_ANTIAIR</FlavorType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <FlavorType>FLAVOR_USE_NUKE</FlavorType>
+      <Flavor>4</Flavor>
+    </Row>
+    <Row>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <FlavorType>FLAVOR_ESPIONAGE</FlavorType>
       <Flavor>6</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
-      <Flavor>8</Flavor>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <FlavorType>FLAVOR_ANTIAIR</FlavorType>
+      <Flavor>7</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <FlavorType>FLAVOR_ARCHAEOLOGY</FlavorType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <FlavorType>FLAVOR_AIR_CARRIER</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <FlavorType>FLAVOR_ARCHAEOLOGY</FlavorType>
+      <Flavor>6</Flavor>
+    </Row>
+    <Row>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_I_LAND_TRADE_ROUTE</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_I_SEA_TRADE_ROUTE</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_I_TRADE_ORIGIN</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_I_TRADE_DESTINATION</FlavorType>
       <Flavor>5</Flavor>
     </Row>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
       <FlavorType>FLAVOR_AIRLIFT</FlavorType>
       <Flavor>5</Flavor>
     </Row>
   </Leader_Flavors>
   <Leader_Traits>
     <Row>
-      <LeaderType>LEADER_WASHINGTON</LeaderType>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
+      <LeaderType>LEADER_D9_KHAMA</LeaderType>
+      <TraitType>TRAIT_D9_PULA</TraitType>
     </Row>
   </Leader_Traits>
 
   <Language_en_US>
-    <Row Tag="TXT_KEY_LEADER_WASHINGTON">
-      <Text>Washington</Text>
+    <Row Tag="TXT_KEY_LEADER_D9_KHAMA">
+      <Text>Khama</Text>
     </Row>
-    <Row Tag="TXT_KEY_LEADER_WASHINGTON_PEDIA">
+    <Row Tag="TXT_KEY_LEADER_D9_KHAMA_PEDIA">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_FACT_1">
-      <Text>Like many Americans today, Washington had a fondness for ice cream - he even had a cooler installed in his house to better enjoy the treat.</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_FACT_1">
+      <Text>todo</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_FACT_2">
-      <Text>Washington was very conscious of style and fashion.  While he commanded the Virginia militia in the 1750's, he redesigned his soldiers' uniforms.</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_FACT_2">
+      <Text>todo</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_FACT_3">
-      <Text>Washington was the only president in history to have been unanimously elected, receiving all 69 votes of the Electoral College.</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_FACT_3">
+      <Text>todo</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_1">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_HEADING_1">
       <Text>History</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_2">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_HEADING_2">
       <Text>Early Life</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_3">
-      <Text>French and Indian War</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_HEADING_3">
+      <Text>Marriage and Exile</Text> <!-- Sorry Wikipedia, this heading is just too good -->
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_4">
-      <Text>Home Life</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_HEADING_4">
+      <Text>Political Career</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_5">
-      <Text>Pre-Revolution Activities</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_HEADING_8">
+      <Text>Khama's Place in History</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_6">
-      <Text>Commander of the Continental Army</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_LIVED">
+      <Text>1921-1980 CE</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_7">
-      <Text>President of the United States</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_NAME">
+      <Text>Seretse Khama</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_HEADING_8">
-      <Text>Washington's Place in History</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_SUBTITLE">
+      <Text>Leader of Botswana</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_LIVED">
-      <Text>1732 - 1799 AD</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_NAME">
-      <Text>George Washington</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_SUBTITLE">
-      <Text>Leader of the United States of America</Text>
-    </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_1">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_1">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_2">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_2">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_3">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_3">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_4">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_4">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_5">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_5">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_6">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_6">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_7">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_7">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TEXT_8">
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TEXT_8">
       <Text><!-- Add Civilopedia text here --></Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TITLES_1">
-      <Text>Commander-in-Chief of Colonial Armies (during American Revolution)</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TITLES_1">
+      <Text>President of Botswana (1966-1980)</Text>
     </Row>
-    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_GEORGE_TITLES_2">
-      <Text>President of the United States of America (1789-1797)</Text>
+    <Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA_TITLES_2">
+      <Text>Kgosi of the Bamangwato People</Text>
     </Row>
   </Language_en_US>
 </GameData>

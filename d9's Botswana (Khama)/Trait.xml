@@ -2,9 +2,9 @@
 <GameData>
   <Traits>
     <Row>
-      <Type>TRAIT_RIVER_EXPANSION</Type>
-      <Description>TXT_KEY_TRAIT_RIVER_EXPANSION</Description>
-      <ShortDescription>TXT_KEY_TRAIT_RIVER_EXPANSION_SHORT</ShortDescription>
+      <Type>TRAIT_D9_PULA</Type>
+      <Description>TXT_KEY_TRAIT_D9_PULA</Description>
+      <ShortDescription>TXT_KEY_TRAIT_D9_PULA_SHORT</ShortDescription>
       <LevelExperienceModifier>0</LevelExperienceModifier>
       <GreatPeopleRateModifier>0</GreatPeopleRateModifier>
       <GreatScientistRateModifier>0</GreatScientistRateModifier>
@@ -25,7 +25,7 @@
       <LandUnitMaintenanceModifier>0</LandUnitMaintenanceModifier>
       <NavalUnitMaintenanceModifier>0</NavalUnitMaintenanceModifier>
       <CapitalBuildingModifier>0</CapitalBuildingModifier>
-      <PlotBuyCostModifier>-50</PlotBuyCostModifier>
+      <PlotBuyCostModifier>0</PlotBuyCostModifier>
       <PlotCultureCostModifier>0</PlotCultureCostModifier>
       <CultureFromKills>0</CultureFromKills>
       <CityCultureBonus>0</CityCultureBonus>
@@ -105,43 +105,7 @@
   <!-- Trait_YieldChangesIncomingTradeRoute -->
   <!-- Trait_YieldModifiers -->
   <!-- Trait_FreePromotions -->
-  <Trait_FreePromotionUnitCombats>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-    <Row>
-      <TraitType>TRAIT_RIVER_EXPANSION</TraitType>
-      <UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-      <PromotionType>PROMOTION_SENTRY</PromotionType>
-    </Row>
-  </Trait_FreePromotionUnitCombats>
+  <!-- Trait_FreePromotionUnitCombats-- >
   <!-- Trait_MovesChangeUnitCombats -->
   <!-- Trait_MaintenanceModifierUnitCombats -->
   <!-- Trait_Terrains -->
@@ -153,11 +117,11 @@
   <!-- Trait_NoTrain -->
 
   <Language_en_US>
-    <Row Tag="TXT_KEY_TRAIT_RIVER_EXPANSION">
-      <Text>All land military units have +1 sight. 50% discount when purchasing tiles.</Text>
+    <Row Tag="TXT_KEY_TRAIT_D9_PULA">
+      <Text>+1 [ICON_FOOD] Food for every two Fresh Water tiles worked by each city. Growing cities generate 2 [ICON_HAPPINESS] Happiness, and 1/3 of your excess [ICON_HAPPINESS] Happiness is converted to [ICON_CULTURE] Culture.</Text>
     </Row>
-    <Row Tag="TXT_KEY_TRAIT_RIVER_EXPANSION_SHORT">
-      <Text>Manifest Destiny</Text>
+    <Row Tag="TXT_KEY_TRAIT_D9_PULA_SHORT">
+      <Text>Pula!</Text>
     </Row>
   </Language_en_US>
 </GameData>

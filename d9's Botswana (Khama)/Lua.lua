@@ -22,6 +22,7 @@ function d9BotswanaDoTurn(iplayer)
 	end
 end
 GameEvents.PlayerDoTurn.Add(d9BotswanaDoTurn);
+--====== Trait lua ======--
 function d9BotswanaPula(player)
 	if player:GetNumCities() > 0 then
 		for city in player:Cities() do
@@ -43,6 +44,7 @@ function d9BotswanaPula(player)
 		end
 	end
 end
+--====== UU lua ======--
 function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm not mistaken
 	-- if player:GetCivilizationType() == botswana then -- checked in the doturn call
 	if player:HasUnitOfClassType(iGeneralClass) then
@@ -79,3 +81,15 @@ function LastKgosiKilled(playerID, unitID, unitType, iX, iY, bDelay)
     end
 end
 GameEvents.UnitPrekill.Add(LastKgosiKilled)
+--====== UI lua ======--
+-- if Botswana has any cities
+-- for each Batswana city
+-- for each tile the city owns
+-- if the tile has a Conservatory
+-- 		iterate through all tiles, count conservatories, set bAdjToNW and bAdjToResource as needed
+-- select dummy based on combination of ct > 2, adjToNW, adjToRes
+-- gonna need improvements for:
+--		no adjacencies (1)
+--		adj only to conservatories, NWs, or resources (3)
+-- 		adj to two of them (3)
+--		adj to all three (1)
