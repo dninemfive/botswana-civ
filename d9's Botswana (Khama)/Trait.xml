@@ -118,7 +118,7 @@
 
   <Language_en_US>
     <Row Tag="TXT_KEY_TRAIT_D9_PULA">
-      <Text>+1 [ICON_FOOD] Food for every two Fresh Water tiles worked by each city. Growing cities generate 2 [ICON_HAPPINESS] Happiness, and 1/3 of your excess [ICON_HAPPINESS] Happiness is converted to [ICON_CULTURE] Culture.</Text>
+      <Text>+1 [ICON_FOOD] Food for every two Fresh Water tiles worked by each city. Growing cities generate 2 [ICON_HAPPINESS_1] Happiness, and 1/3 of your excess [ICON_HAPPINESS_1] Happiness is converted to [ICON_CULTURE] Culture.</Text>
     </Row>
     <Row Tag="TXT_KEY_TRAIT_D9_PULA_SHORT">
       <Text>Pula!</Text>

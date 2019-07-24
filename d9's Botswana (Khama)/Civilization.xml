@@ -287,7 +287,7 @@
 	<Civilization_Leaders>
 		<Row>
 			<CivilizationType>CIVILIZATION_D9_BOTSWANA</CivilizationType>
-			<LeaderheadType>LEADER_KHAMA</LeaderheadType>
+			<LeaderheadType>LEADER_D9_KHAMA</LeaderheadType>
 		</Row>
 	</Civilization_Leaders>
 	<Civilization_Religions>
@@ -547,11 +547,11 @@
 			<Text>Botswana</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_SHORT_DESC">
-			<Text>Botswanan</Text>
+			<Text>Botswana</Text>
 			<Gender>neuter:an</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV_D9_BOTSWANA_ADJECTIVE">
-			<Text>American</Text>
+			<Text>Botswanan</Text>
 			<Gender>neuter:an</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_DAWN_D9_BOTSWANA_TEXT">
