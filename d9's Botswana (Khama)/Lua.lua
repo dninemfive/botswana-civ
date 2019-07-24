@@ -17,6 +17,7 @@ local iGeneralClass = GameInfoTypes["UNITCLASS_GREAT_GENERAL"]
 function d9BotswanaDoTurn(iplayer)
 	local player = Players[iplayer];
 	if player:IsEverAlive() and (player:GetCivilizationType() == botswana) then
+		print("processing Botswana's turn...")
 		d9BotswanaPula(player)
 		d9BatswanaKgosi(player)
 	end
@@ -24,8 +25,10 @@ end
 GameEvents.PlayerDoTurn.Add(d9BotswanaDoTurn);
 --====== Trait lua ======--
 function d9BotswanaPula(player)
+	print("  pula:")
 	if player:GetNumCities() > 0 then
 		for city in player:Cities() do
+			print("    processing " .. city:GetName())
 			-- count freshwater worked tiles 
 			local ct = 0
 			-- Chrisy15 credits this to Bane_
@@ -37,8 +40,10 @@ function d9BotswanaPula(player)
 			end
 			-- give city food dummies equal to floor(count/2)
 			city:SetNumRealBuilding(math.floor(ct/foodDiv))
+			print("    gave " .. city:GetName() .. math.floor(ct/foodDiv) " food (ct = " .. ct .. ")")
 			-- if city is growing, give 2 happiness dummy
 			if city:FoodDifference() > 0 then
+				print("City is growing, giving happiness...")
 				city:SetNumRealBuilding(happiness, growthHappiness)
 			end
 		end
@@ -48,6 +53,7 @@ end
 function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm not mistaken
 	-- if player:GetCivilizationType() == botswana then -- checked in the doturn call
 	if player:HasUnitOfClassType(iGeneralClass) then
+		print("Botswana has kgosi")
 		-- iterate through all units, remove any ignoreZOC promotions
 		for unit in player:Units() do
 			pUnit:SetHasPromotion(ignoreZOC, false)
