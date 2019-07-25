@@ -6,8 +6,8 @@
 			<Description>TXT_KEY_PROMOTION_D9_KGOSI_ZOC</Description>
 			<Help>TXT_KEY_PROMOTION_D9_KGOSI_ZOC_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PortraitIndex>5</PortraitIndex> <!-- TODO: change -->
-			<IconAtlas>EXPANSION2_PROMOTION_ATLAS</IconAtlas>
+			<PortraitIndex>59</PortraitIndex> <!-- TODO: change -->
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
 			<PediaType>PEDIA_ATTRIBUTES</PediaType>
 			<PediaEntry>TXT_KEY_PROMOTION_D9_KGOSI_ZOC</PediaEntry>
 			<CannotBeChosen>true</CannotBeChosen>

@@ -60,14 +60,14 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 		print("  kgosi:")
 		-- iterate through all units, remove any ignoreZOC promotions
 		for unit in player:Units() do
-			print("    unit: " .. unit:GetName())
+			-- print("    unit: " .. unit:GetName())
 			if unit:GetUnitType() ~= kgosi then unit:SetHasPromotion(ignoreZOC, false) end
 		end
 		-- iterate through all units, grant ZOC promotions to units stacked with or adjacent to Kgosi, heal if Kgosi in hills
 		for unit in player:Units() do			
-			print("unit " .. unit:GetName() .. " type = " .. unit:GetUnitType() .. ", kgosi = " .. kgosi)
+			-- print("unit " .. unit:GetName() .. " type = " .. unit:GetUnitType() .. ", kgosi = " .. kgosi)
 			if unit:GetUnitType() == kgosi then
-				print("Kgosi found")
+				print("    Kgosi found")
 				local curPlot = unit:GetPlot()
 				-- grant promo to stacked units
 				for i = 0,(curPlot:GetNumUnits() - 1) do
@@ -84,9 +84,9 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 				for plot in PlotRingIterator(curPlot, 1) do 
 					for i = 0,(plot:GetNumUnits() - 1) do
 						local anotherUnit = plot:GetUnit(i)
-						print("Adjacent to Kgosi: " .. anotherUnit:GetName())
+						print("    Adjacent to Kgosi: " .. anotherUnit:GetName())
 						if anotherUnit:GetOwner() == player:GetID() and anotherUnit:IsCombatUnit() then
-							print("Unit is owned by Botswana and is a combat unit.")
+							print("      Unit is owned by Botswana and is a combat unit.")
 							anotherUnit:SetHasPromotion(ignoreZOC, true)
 							if curPlot:IsHills() then
 								anotherUnit:ChangeDamage(healAmount)

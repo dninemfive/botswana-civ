@@ -115,7 +115,7 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
     </Content>
     <Content Include="PlotIterators.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Promotions.xml">
       <SubType>Lua</SubType>
