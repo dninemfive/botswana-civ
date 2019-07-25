@@ -120,6 +120,10 @@
       <UnitType>UNIT_D9_BOTSWANAN_KGOSI</UnitType>
       <PromotionType>PROMOTION_GREAT_GENERAL</PromotionType>
     </Row>
+	<Row>
+		<UnitType>UNIT_GREAT_GENERAL</UnitType>
+		<PromotionType>PROMOTION_D9_KGOSI_ZOC</PromotionType>
+	</Row>
   </Unit_FreePromotions>
   <Unit_Flavors>
     <Row>

@@ -2,6 +2,8 @@
 -- Many thanks to TopHatPaladin and Chrisy15 for help, noted below.
 -- DateCreated: 7/15/2019 9:00:46 AM
 --------------------------------------------------------------
+include("PlotIterators")
+
 local kgosi = GameInfoTypes["UNIT_D9_BOTSWANAN_KGOSI"]
 local ignoreZOC = GameInfoTypes["PROMOTION_D9_KGOSI_ZOC"]
 local botswana = GameInfoTypes["CIVILIZATION_D9_BOTSWANA"]
@@ -20,7 +22,6 @@ function d9BotswanaDoTurn(iplayer)
 		print("processing Botswana's turn...")
 		d9BotswanaPula(player)
 		d9BatswanaKgosi(player)
-		if 1 then print("1 equals true") end
 	end
 end
 GameEvents.PlayerDoTurn.Add(d9BotswanaDoTurn);
@@ -59,18 +60,38 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 		print("  kgosi:")
 		-- iterate through all units, remove any ignoreZOC promotions
 		for unit in player:Units() do
-			unit:SetHasPromotion(ignoreZOC, false)
+			print("    unit: " .. unit:GetName())
+			if unit:GetUnitType() ~= kgosi then unit:SetHasPromotion(ignoreZOC, false) end
 		end
 		-- iterate through all units, grant ZOC promotions to units stacked with or adjacent to Kgosi, heal if Kgosi in hills
 		for unit in player:Units() do			
-			if unit:GetUnitCombatType() == kgosi then
+			print("unit " .. unit:GetName() .. " type = " .. unit:GetUnitType() .. ", kgosi = " .. kgosi)
+			if unit:GetUnitType() == kgosi then
 				print("Kgosi found")
-				local isInHills = unit:GetPlot():IsHills()
-				print("  isInHills = " .. isInHills)
-				for other in adjacentUnits(unit) do
-					other:SetHasPromotion(ignoreZOC, true)
-					if isInHills then
-						other:ChangeDamage(healAmount)
+				local curPlot = unit:GetPlot()
+				-- grant promo to stacked units
+				for i = 0,(curPlot:GetNumUnits() - 1) do
+					local otherUnit = curPlot:GetUnit(i)
+					print("Stacked with Kgosi: " .. otherUnit:GetName())
+					if otherUnit:GetOwner() == player:GetID() and otherUnit:IsCombatUnit() then
+						otherUnit:SetHasPromotion(ignoreZOC, true)
+						if curPlot:IsHills() then
+							otherUnit:ChangeDamage(healAmount)
+						end
+					end
+				end
+				-- iterate through adjacent plots and grant appropriate promos
+				for plot in PlotRingIterator(curPlot, 1) do 
+					for i = 0,(plot:GetNumUnits() - 1) do
+						local anotherUnit = plot:GetUnit(i)
+						print("Adjacent to Kgosi: " .. anotherUnit:GetName())
+						if anotherUnit:GetOwner() == player:GetID() and anotherUnit:IsCombatUnit() then
+							print("Unit is owned by Botswana and is a combat unit.")
+							anotherUnit:SetHasPromotion(ignoreZOC, true)
+							if curPlot:IsHills() then
+								anotherUnit:ChangeDamage(healAmount)
+							end
+						end
 					end
 				end
 			end

@@ -30,11 +30,17 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
     <RootNamespace>d9's Botswana (Khama)</RootNamespace>
     <ModReferences />
     <ModContent>
-      <Content xmlns="">
+      <Content>
         <Type>InGameUIAddin</Type>
         <Name>Botswana Lua</Name>
         <Description>Lua for dninemfive's Botswana (Khama)</Description>
         <FileName>Lua.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>PlotIterator(Botswana)</Name>
+        <Description />
+        <FileName>PlotIterators.lua</FileName>
       </Content>
     </ModContent>
     <ModActions>
