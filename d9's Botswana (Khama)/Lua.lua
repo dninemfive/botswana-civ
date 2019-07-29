@@ -21,8 +21,10 @@ local consa4 = GameInfoTypes["IMPROVEMENT_D9_CONSAREAFOUR"]
 local healAmount = -10
 local foodDiv = 2 -- food divisor
 local growthHappiness = 2
--- intentionally a generic great general
+local nwValue = 3 -- natural wonder value
+-- vanilla references
 local iGeneralClass = GameInfoTypes["UNITCLASS_GREAT_GENERAL"]
+local iFeatureFallout = GameInfoTypes["FEATURE_FALLOUT"]
 
 function d9BotswanaDoTurn(iplayer)
 	local player = Players[iplayer];
@@ -143,7 +145,7 @@ Events.LoadScreenClose.Add(GivePulaPolicy)
 function TabulateConservationAreas()
 	for i = 0, Map.GetNumPlots() - 1, 1 do
 		local pPlot = Map.GetPlotByIndex(i)
-		if pPlot:GetImprovementType() == consa then
+		if isConservationArea(pPlot:GetImprovementType()) then
 			tImprovementPlots[pPlot] = true
 		end
 	end
@@ -151,11 +153,11 @@ end
 Events.SequenceGameInitComplete.Add(TabulateConservationAreas)
 function ConservationAreaBuilt(playerID, iX, iY, improvementType)
 	local pPlot = Map.GetPlot(iX, iY)
-	if improvementType == consa then
+	if isConservationArea(improvementType) then
 		tImprovementPlots[pPlot] = true
 	elseif tImprovementPlots[pPlot] then
 		-- this check seems redundant, but it prevents you from losing the bonuses when you build a road on top of the improvement
-		if pPlot:GetImprovementType() ~= iYourImp then
+		if not isConservationArea(pPlot:GetImprovementType()) then
 			tImprovementPlots[pPlot] = false
 		end
 	end
@@ -163,16 +165,23 @@ end
 GameEvents.BuildFinished.Add(ConservationAreaBuilt)
 function ModifyConsAreaYields(playerID)
 	local pPlayer = Players[playerID]
-	if pPlayer:GetImprovementCount(iYourImp) > 0 then
+	if playerHasAnyConservationAreas(pPlayer) then
 		for kPlot, v in pairs(tImprovementPlots) do
 			if kPlot:GetOwner() == playerID and not kPlot:IsImprovementPillaged() then
 				local ct = 0
-				for iDirection = 0, iNumDirections, 1 do
+				for iDirection = 0, iNumDirections, 1 do -- todo: use this code instead of PlotIterators for all adjacency
 					local pAdjPlot = Map.PlotDirection(kPlot:GetX(), kPlot:GetY(), iDirection)
 					ct = ct + plotValue(pAdjPlot)					
 				end
-				-- add your chosen bonuses here
-				
+				if ct > 6 then -- requires at least one adjacent natural wonder
+					kPlot:SetImprovementType(consa4)
+				elseif ct > 4 then
+					kPlot:SetImprovementType(consa3)
+				elseif ct > 1 then
+					kPlot:SetImprovementType(consa2)
+				else 
+					kPlot:SetImprovementType(consa)
+				end
 			end
 		end
 	end
@@ -180,13 +189,21 @@ end
 GameEvents.PlayerDoTurn.Add(ModifyConsAreaYields)
 -- end TopHatPaladin code
 function plotValue(plot)
-	-- check if it's a natural wonder
-	-- check if it's unimproved
 	local t = plot:GetImprovementType()
-	if t == -1 or t == consa or t == consa2 or t == consa3 or t == consa4 then return 1
+	-- check if it's a natural wonder
+	if t == -1 and plot:GetFeatureType() > iFeatureFallout then return nwValue
+	-- check if it's unimproved	
+	if (((not plot:IsWater()) or (plot:IsWater() and plot:IsLake()))) and (t == -1 or isConservationArea(t)) then return 1
 	return 0
 end
 function isConservationArea(t)
-	if t == -1 or t == consa or t == consa2 or t == consa3 or t == consa4 then return 1
+	if t == consa or t == consa2 or t == consa3 or t == consa4 then return 1
+	return 0
+end
+function playerHasAnyConservationAreas(player)
+	if player:GetImprovementCount(consa) > 0 then return 1
+	elseif player:GetImprovementCount(consa2) > 0 then return 1
+	elseif player:GetImprovementCount(consa3) > 0 then return 1
+	elseif player:GetImprovementCount(consa4) > 0 then return 1
 	return 0
 end
