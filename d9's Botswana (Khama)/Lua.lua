@@ -9,6 +9,14 @@ local ignoreZOC = GameInfoTypes["PROMOTION_D9_KGOSI_ZOC"]
 local botswana = GameInfoTypes["CIVILIZATION_D9_BOTSWANA"]
 local food = GameInfoTypes["BUILDING_D9_BOTS_FOODDUMMY"]
 local happiness = GameInfoTypes["BUILDING_D9_BOTS_HAPPDUMMY"]
+local pula = GameInfoTypes["POLICY_D9_PULAHAPPINESS"]
+-- improvement ids
+local iNumDirections = DirectionTypes.NUM_DIRECTION_TYPES - 1
+local tImprovementPlots = {}
+local consa = GameInfoTypes["IMPROVEMENT_D9_CONSERVATIONAREA"]
+local consa2 = GameInfoTypes["IMPROVEMENT_D9_CONSAREATWO"]
+local consa3 = GameInfoTypes["IMPROVEMENT_D9_CONSAREATHREE"]
+local consa4 = GameInfoTypes["IMPROVEMENT_D9_CONSAREAFOUR"]
 -- variables
 local healAmount = -10
 local foodDiv = 2 -- food divisor
@@ -27,27 +35,18 @@ end
 GameEvents.PlayerDoTurn.Add(d9BotswanaDoTurn);
 --====== Trait lua ======--
 function d9BotswanaPula(player)
-	-- print("  pula:")
 	if player:GetNumCities() > 0 then
 		for city in player:Cities() do
-			-- print("    processing " .. city:GetName())
-			-- count freshwater worked tiles 
-			local ct = 0
+			local ct = 0 -- worked freshwater tiles
 			-- Chrisy15 credits this to Bane_
 			for i = 0, city:GetNumCityPlots() - 1, 1 do
-				-- print("      inside for loop: " .. i)
 				local plot = city:GetCityIndexPlot(i)
 				if (plot ~= nil) and (plot:GetWorkingCity() == city) and plot:IsBeingWorked() and plot:IsFreshWater() then
-					ct = ct + 1 -- I miss ct++ :(
+					ct = ct + 1
 				end
 			end
-			-- print("end for loop")
-			-- give city food dummies equal to floor(count/2)
 			city:SetNumRealBuilding(food, math.floor(ct/foodDiv))
-			-- print("    gave " .. city:GetName() .. math.floor(ct/foodDiv) .. " food (ct = " .. ct .. ")")
-			-- if city is growing, give 2 happiness dummy
 			if city:FoodDifference() > 0 then
-				-- print("City is growing, giving happiness...")
 				city:SetNumRealBuilding(happiness, growthHappiness)
 			end
 		end
@@ -72,7 +71,7 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 				-- grant promo to stacked units
 				for i = 0,(curPlot:GetNumUnits() - 1) do
 					local otherUnit = curPlot:GetUnit(i)
-					print("Stacked with Kgosi: " .. otherUnit:GetName())
+					-- print("Stacked with Kgosi: " .. otherUnit:GetName())
 					if otherUnit:GetOwner() == player:GetID() and otherUnit:IsCombatUnit() then
 						otherUnit:SetHasPromotion(ignoreZOC, true)
 						if curPlot:IsHills() then
@@ -113,15 +112,81 @@ function LastKgosiKilled(playerID, unitID, unitType, iX, iY, bDelay)
     end
 end
 GameEvents.UnitPrekill.Add(LastKgosiKilled)
+-- end TopHatPaladin code
+-- following code from Thayae Kittaya, written by Chrisy15
+function GivePulaPolicy(playerID)    -- Should this even pass a playerID? Who nose
+    for playerID, pPlayer in pairs(Players) do
+        if (pPlayer:GetCivilizationType() == botswana and pPlayer:IsEverAlive()) then
+            if not pPlayer:HasPolicy(pula) then
+                if Player.GrantPolicy then
+                    pPlayer:GrantPolicy(pula, true)
+                else
+                    pPlayer:SetNumFreePolicies(1)
+                    pPlayer:SetNumFreePolicies(0)
+                    pPlayer:SetHasPolicy(pula, true)
+                end
+            end
+        end
+    end
+end
+Events.LoadScreenClose.Add(GivePulaPolicy)
+-- end Chrisy15 code
 --====== UI lua ======--
 -- if Botswana has any cities
 -- for each Batswana city
--- for each tile the city owns
--- if the tile has a Conservatory
--- 		iterate through all tiles, count conservatories, set bAdjToNW and bAdjToResource as needed
--- select dummy based on combination of ct > 2, adjToNW, adjToRes
--- gonna need improvements for:
---		no adjacencies (1)
---		adj only to conservatories, NWs, or resources (3)
--- 		adj to two of them (3)
---		adj to all three (1)
+-- 	for each tile the city owns
+-- 		if the tile has a Conservatory
+-- 			for each adjacent tile
+--				if tile is unimproved/has conservatory, ++; if natural wonder, ++++
+--			replace with appropriate dummy
+-- TopHatPaladin code
+function TabulateConservationAreas()
+	for i = 0, Map.GetNumPlots() - 1, 1 do
+		local pPlot = Map.GetPlotByIndex(i)
+		if pPlot:GetImprovementType() == consa then
+			tImprovementPlots[pPlot] = true
+		end
+	end
+end
+Events.SequenceGameInitComplete.Add(TabulateConservationAreas)
+function ConservationAreaBuilt(playerID, iX, iY, improvementType)
+	local pPlot = Map.GetPlot(iX, iY)
+	if improvementType == consa then
+		tImprovementPlots[pPlot] = true
+	elseif tImprovementPlots[pPlot] then
+		-- this check seems redundant, but it prevents you from losing the bonuses when you build a road on top of the improvement
+		if pPlot:GetImprovementType() ~= iYourImp then
+			tImprovementPlots[pPlot] = false
+		end
+	end
+end
+GameEvents.BuildFinished.Add(ConservationAreaBuilt)
+function ModifyConsAreaYields(playerID)
+	local pPlayer = Players[playerID]
+	if pPlayer:GetImprovementCount(iYourImp) > 0 then
+		for kPlot, v in pairs(tImprovementPlots) do
+			if kPlot:GetOwner() == playerID and not kPlot:IsImprovementPillaged() then
+				local ct = 0
+				for iDirection = 0, iNumDirections, 1 do
+					local pAdjPlot = Map.PlotDirection(kPlot:GetX(), kPlot:GetY(), iDirection)
+					ct = ct + plotValue(pAdjPlot)					
+				end
+				-- add your chosen bonuses here
+				
+			end
+		end
+	end
+end
+GameEvents.PlayerDoTurn.Add(ModifyConsAreaYields)
+-- end TopHatPaladin code
+function plotValue(plot)
+	-- check if it's a natural wonder
+	-- check if it's unimproved
+	local t = plot:GetImprovementType()
+	if t == -1 or t == consa or t == consa2 or t == consa3 or t == consa4 then return 1
+	return 0
+end
+function isConservationArea(t)
+	if t == -1 or t == consa or t == consa2 or t == consa3 or t == consa4 then return 1
+	return 0
+end

@@ -5,7 +5,4 @@ UA (Pula!): +1 Food for every two Fresh Water tiles worked by each city. Growing
 
 UU: Kgosi (Great General): Kgosi (Great General): +1 Sight. Grants stacked and adjacent units the ability to ignore Zone of Control and, if starting its turn in Hills, heals them.
 
-UI (Conservatory): Unlocked at Biology. +1 Culture, +1 Gold. +1 Culture if adjacent to at least two Conservation Areas. +2 Culture, +1 Gold if adjacent to a Natural Wonder. +1 Culture and Gold if adjacent to certain Bonus Resources, namely
-
-	Ivory, Cattle, Deer, Bison, Sheep, Horses, Furs, Stone, Marble;
-	(with South Africa (Mandela)) Rhino, Lion, Springbok.
+UI (Conservatory): Unlocked at Biology. +1 Culture, +1 Gold. Increases to +2 Culture, +2 Gold if there are at least two adjacent unimproved land tiles and to +3/3 if at least five. Tiles with a Conservatory count as unimproved for this purpose, and tiles with Natural Wonders count triple. Tiles with a score of at least 7 (i.e. a Natural Wonder and four other tiles) have 4/4 yields.
