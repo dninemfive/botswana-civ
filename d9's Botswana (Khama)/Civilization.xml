@@ -18,7 +18,7 @@
 			<ArtStylePrefix>AFRICAN</ArtStylePrefix>
 			<DerivativeCiv></DerivativeCiv>
 			<PortraitIndex>0</PortraitIndex>
-			<IconAtlas>CIV_COLOR_ATLAS</IconAtlas>
+			<IconAtlas>D9_BOTSWANA_ATLAS</IconAtlas>
 			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
 			<MapImage>MapAmerica512.dds</MapImage>
 			<DawnOfManQuote>TXT_KEY_CIV5_DAWN_D9_BOTSWANA_TEXT</DawnOfManQuote>

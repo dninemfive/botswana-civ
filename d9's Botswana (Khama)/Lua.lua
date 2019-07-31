@@ -48,8 +48,10 @@ function d9BotswanaPula(player)
 				end
 			end
 			city:SetNumRealBuilding(food, math.floor(ct/foodDiv))
+			-- print("  city ".. city:GetName() .. ": is growing?")
 			if city:FoodDifference() > 0 then
 				city:SetNumRealBuilding(happiness, growthHappiness)
+				-- print("    yes, adding happiness")
 			end
 		end
 	end
@@ -58,7 +60,7 @@ end
 function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm not mistaken
 	-- if player:GetCivilizationType() == botswana then -- checked in the doturn call
 	if player:HasUnitOfClassType(iGeneralClass) then
-		print("  kgosi:")
+		-- print("  kgosi:")
 		-- iterate through all units, remove any ignoreZOC promotions
 		for unit in player:Units() do
 			-- print("    unit: " .. unit:GetName())
@@ -68,7 +70,7 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 		for unit in player:Units() do			
 			-- print("unit " .. unit:GetName() .. " type = " .. unit:GetUnitType() .. ", kgosi = " .. kgosi)
 			if unit:GetUnitType() == kgosi then
-				print("    Kgosi found")
+				-- print("    Kgosi found")
 				local curPlot = unit:GetPlot()
 				-- grant promo to stacked units
 				for i = 0,(curPlot:GetNumUnits() - 1) do
@@ -85,9 +87,9 @@ function d9BatswanaKgosi(player) -- not a typo, it's the adjectival form if I'm 
 				for plot in PlotRingIterator(curPlot, 1) do 
 					for i = 0,(plot:GetNumUnits() - 1) do
 						local anotherUnit = plot:GetUnit(i)
-						print("    Adjacent to Kgosi: " .. anotherUnit:GetName())
+						-- print("    Adjacent to Kgosi: " .. anotherUnit:GetName())
 						if anotherUnit:GetOwner() == player:GetID() and anotherUnit:IsCombatUnit() then
-							print("      Unit is owned by Botswana and is a combat unit.")
+							-- print("      Unit is owned by Botswana and is a combat unit.")
 							anotherUnit:SetHasPromotion(ignoreZOC, true)
 							if curPlot:IsHills() then
 								anotherUnit:ChangeDamage(healAmount)
@@ -117,6 +119,7 @@ GameEvents.UnitPrekill.Add(LastKgosiKilled)
 -- end TopHatPaladin code
 -- following code from Thayae Kittaya, written by Chrisy15
 function GivePulaPolicy(playerID)    -- Should this even pass a playerID? Who nose
+	-- print("  givePulaPolicy")
     for playerID, pPlayer in pairs(Players) do
         if (pPlayer:GetCivilizationType() == botswana and pPlayer:IsEverAlive()) then
             if not pPlayer:HasPolicy(pula) then
@@ -143,6 +146,7 @@ Events.LoadScreenClose.Add(GivePulaPolicy)
 --			replace with appropriate dummy
 -- TopHatPaladin code
 function TabulateConservationAreas()
+	-- print("  tabulateConservationAreas")
 	for i = 0, Map.GetNumPlots() - 1, 1 do
 		local pPlot = Map.GetPlotByIndex(i)
 		if isConservationArea(pPlot:GetImprovementType()) then
@@ -191,19 +195,19 @@ GameEvents.PlayerDoTurn.Add(ModifyConsAreaYields)
 function plotValue(plot)
 	local t = plot:GetImprovementType()
 	-- check if it's a natural wonder
-	if t == -1 and plot:GetFeatureType() > iFeatureFallout then return nwValue
+	if t == -1 and plot:GetFeatureType() > iFeatureFallout then return nwValue end
 	-- check if it's unimproved	
-	if (((not plot:IsWater()) or (plot:IsWater() and plot:IsLake()))) and (t == -1 or isConservationArea(t)) then return 1
-	return 0
+	if (((not plot:IsWater()) or (plot:IsWater() and plot:IsLake()))) and (t == -1 or isConservationArea(t)) then return 1 end
+	return 0	
 end
 function isConservationArea(t)
-	if t == consa or t == consa2 or t == consa3 or t == consa4 then return 1
+	if t == consa or t == consa2 or t == consa3 or t == consa4 then return 1 end
 	return 0
 end
 function playerHasAnyConservationAreas(player)
 	if player:GetImprovementCount(consa) > 0 then return 1
 	elseif player:GetImprovementCount(consa2) > 0 then return 1
 	elseif player:GetImprovementCount(consa3) > 0 then return 1
-	elseif player:GetImprovementCount(consa4) > 0 then return 1
+	elseif player:GetImprovementCount(consa4) > 0 then return 1 end
 	return 0
 end

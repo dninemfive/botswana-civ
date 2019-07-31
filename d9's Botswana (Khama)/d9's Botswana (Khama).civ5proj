@@ -6,7 +6,7 @@
     <Name>d9's Botswana (Seretse Khama)</Name>
     <Guid>a38e9a44-ee38-464f-819f-e6f9957413b7</Guid>
     <ModVersion>1</ModVersion>
-    <Stability>Alpha</Stability>
+    <Stability>Beta</Stability>
     <Teaser>Adds Botswana, led by Seretse Khama, to the game!
 
 UA (Pula!): +1 Food on tiles with Fresh Water. Growing cities generate 2 H</Teaser>
@@ -79,6 +79,11 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
         <Type>UpdateDatabase</Type>
         <FileName>Units.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Art/Atlases.xml</FileName>
+      </Action>
     </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -93,6 +98,38 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Art\Atlases.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon128.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon24.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon32.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon45.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon64.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Art\botsicon80.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Civilization.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -129,6 +166,9 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Art" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
