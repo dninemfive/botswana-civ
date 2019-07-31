@@ -11,3 +11,4 @@ UI (Conservatory): Unlocked at Biology. +1 Culture, +1 Gold. Increases to +2 Cul
 - TopHatPaladin - a bunch of optimizations and code help
 - Chrisy15 - code help and snippets
 - grant - pointed me to art resources
+- whoward - PlotIterators.lua
