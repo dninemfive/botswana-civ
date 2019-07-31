@@ -19,7 +19,7 @@
 			<DerivativeCiv></DerivativeCiv>
 			<PortraitIndex>0</PortraitIndex>
 			<IconAtlas>D9_BOTSWANA_ATLAS</IconAtlas>
-			<AlphaIconAtlas>CIV_ALPHA_ATLAS</AlphaIconAtlas>
+			<AlphaIconAtlas>D9_BOTSWANA_ALPHA_ATLAS</AlphaIconAtlas>
 			<MapImage>MapAmerica512.dds</MapImage>
 			<DawnOfManQuote>TXT_KEY_CIV5_DAWN_D9_BOTSWANA_TEXT</DawnOfManQuote>
 			<DawnOfManImage>DOM_Washington.dds</DawnOfManImage>
@@ -555,7 +555,7 @@
 			<Gender>neuter:an</Gender>
 		</Row>
 		<Row Tag="TXT_KEY_CIV5_DAWN_D9_BOTSWANA_TEXT">
-			<Text>Welcome, President Khama! You lead the industrious Botswanan civilization. Among its fellow newly-independent African states, Botswana was among the worst-off. However, in your tenure, you introduced programs building infrastructure, advancing industry, and attacking corruption, all while maintaining a program of civil liberties unequaled among your peers. Today, Botswana is among the best-off countries in Africa, with a strong democracy and economy.[NEWLINE][NEWLINE]In this new age, Botswana needs you, President Khama. Can you lead the Batswana people to greatness? Can you build a civilization that will stand the test of time?</Text>
+			<Text>Welcome, President Khama! You lead the industrious Botswanan civilization. Among its fellow newly-independent African states, Botswana was one of the worst-off. However, in your tenure, you introduced programs building infrastructure, advancing industry, and attacking corruption, all while maintaining a program of civil liberties unequaled among your peers. Today, Botswana is among the strongest economies in subsaharan Africa, with a highly stable democracy to boot.[NEWLINE][NEWLINE]In this new age, Botswana needs you, President Khama. Can you lead the Batswana people to greatness? Can you build a civilization that will stand the test of time?</Text>
 		</Row>
 		<Row Tag="TXT_KEY_CITY_NAME_D9_BOTSWANA_0">
 			<Text>Gaborone</Text>
