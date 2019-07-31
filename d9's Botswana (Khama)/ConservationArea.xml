@@ -276,6 +276,22 @@
       <Yield>4</Yield>
     </Row>
   </Improvement_Yields>
+  <Builds>
+	<Row>
+		<Type>BUILD_D9_CONSERVATIONAREA</Type>
+		<PrereqTech>TECH_BIOLOGY</PrereqTech>
+		<Time>50</Time>
+		<ImprovementType>IMPROVEMENT_D9_CONSERVATIONAREA</ImprovementType>
+		<Description>TXT_KEY_BUILD_D9_CONSERVATIONAREA</Description>
+		<Help>TXT_KEY_BUILD_D9_CONSERVATIONAREA_HELP</Help>
+		<Recommendation>TXT_KEY_BUILD_D9_CONSERVATIONAREA_REC</Recommendation>
+		<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+		<HotKey>KB_B</HotKey>
+		<OrderPriority>98</OrderPriority>
+		<IconIndex>1</IconIndex>
+		<IconAtlas>UNIT_ACTION_ATLAS_EXP2</IconAtlas>
+	</Row>
+  </Builds>
   <Language_en_US>
     <Row Tag="TXT_KEY_IMPROVEMENT_D9_CONSERVATIONAREA">
       <Text>Conservation Area</Text>
@@ -286,5 +302,14 @@
     <Row Tag="TXT_KEY_CIV5_IMPROVEMENTS_D9_CONSERVATIONAREA_HELP">
       <Text>Conservation Areas can be built on any land tile. They produce 1 [ICON_CULTURE] Culture and 1 [ICON_GOLD] Gold, plus 1 [ICON_FOOD] Food if constructed on a tile with Fresh Water. They also yield additional Culture if adjacent to two other Conservation Areas, and additional Culture and Gold if adjacent to Natural Wonders or bonus resources.</Text>
     </Row>
+	<Row Tag="TXT_KEY_BUILD_D9_CONSERVATIONAREA">
+		<Text>Conservation Area</Text>
+	</Row>
+	<Row Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_HELP">
+		<Text>Designates a Conservation Area, which increases the amount of [ICON_GOLD] Gold and [ICON_CULTURE] Culture provided by this tile, while keeping any features intact. Provides additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for each adjacent unimproved tile, conservation area, or Natural Wonder, with the latter counting as three unimproved tiles.</Text>
+	</Row>
+	<Row Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_REC">
+		<Text>It will increase the amount of the amount of [ICON_GOLD] Gold and [ICON_CULTURE] Culture provided by this tile, while keeping the Jungle intact. Also provides additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for each adjacent unimproved tile, conservation area, or Natural Wonder.</Text>
+	</Row>
   </Language_en_US>
 </GameData>
