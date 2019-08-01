@@ -305,10 +305,10 @@
 	<Row Tag="TXT_KEY_BUILD_D9_CONSERVATIONAREA">
 		<Text>Conservation Area</Text>
 	</Row>
-	<Row Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_HELP">
+	<Row Tag="TXT_KEY_BUILD_D9_CONSERVATIONAREA_HELP">
 		<Text>Designates a Conservation Area, which increases the amount of [ICON_GOLD] Gold and [ICON_CULTURE] Culture provided by this tile, while keeping any features intact. Provides additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for each adjacent unimproved tile, conservation area, or Natural Wonder, with the latter counting as three unimproved tiles.</Text>
 	</Row>
-	<Row Tag="TXT_KEY_BUILD_BRAZILWOOD_CAMP_REC">
+	<Row Tag="TXT_KEY_BUILD_D9_CONSERVATIONAREA_REC">
 		<Text>It will increase the amount of the amount of [ICON_GOLD] Gold and [ICON_CULTURE] Culture provided by this tile, while keeping the Jungle intact. Also provides additional [ICON_GOLD] Gold and [ICON_CULTURE] Culture for each adjacent unimproved tile, conservation area, or Natural Wonder.</Text>
 	</Row>
   </Language_en_US>

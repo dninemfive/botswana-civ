@@ -146,6 +146,10 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Art\d9_botswana_leaderscene.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="Civilization.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -159,6 +163,10 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Leader.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Leaderscene.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
