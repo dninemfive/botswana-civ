@@ -329,7 +329,7 @@
     </Row>
   </Building_YieldChanges>
   <!-- Policy for UA -->
-  <Policy>
+  <Policies>
     <Row>
 		<Type>POLICY_D9_PULAHAPPINESS</Type>
 		<Description>TXT_KEY_POLICY_D9_PULAHAPPINESS</Description>
@@ -344,7 +344,7 @@
 		<IconAtlas>POLICY_ATLAS_EXP2</IconAtlas>
 		<IconAtlasAchieved>POLICY_A_ATLAS_EXP2</IconAtlasAchieved>
 	</Row>
-  </Policy>
+  </Policies>
   <!-- Text -->
   <Language_en_US>
     <Row Tag="TXT_KEY_BUILDING_D9_BOTS_FOODDUMMY_DESC">

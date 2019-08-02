@@ -6,7 +6,7 @@
       <Description>TXT_KEY_LEADER_D9_KHAMA</Description>
       <Civilopedia>TXT_KEY_LEADER_D9_KHAMA_PEDIA</Civilopedia>
       <CivilopediaTag>TXT_KEY_CIVILOPEDIA_LEADERS_KHAMA</CivilopediaTag> <!-- TODO: change this (and all other civiliopedia stuff/remaining other-civ leftovers) -->
-      <ArtDefineTag>Leaderscene.xml</ArtDefineTag>
+      <ArtDefineTag>D9BotsLeaderscene.xml</ArtDefineTag>
       <VictoryCompetitiveness>5</VictoryCompetitiveness>
       <WonderCompetitiveness>3</WonderCompetitiveness>
       <MinorCivCompetitiveness>3</MinorCivCompetitiveness>
