@@ -147,9 +147,11 @@ Events.LoadScreenClose.Add(GivePulaPolicy)
 -- TopHatPaladin code
 function TabulateConservationAreas()
 	-- print("  tabulateConservationAreas")
+	print("consa: " .. consa .. ", consa2: " .. consa2 .. ", consa3: " .. consa3 .. ", consa4: " .. consa4)
 	for i = 0, Map.GetNumPlots() - 1, 1 do
 		local pPlot = Map.GetPlotByIndex(i)
 		if isConservationArea(pPlot:GetImprovementType()) then
+			print("  isConsa(" .. pPlot:GetImprovementType() .. ") = true")
 			tImprovementPlots[pPlot] = true
 		end
 	end
@@ -175,7 +177,7 @@ function ModifyConsAreaYields(playerID)
 				local ct = 0
 				for iDirection = 0, iNumDirections, 1 do -- todo: use this code instead of PlotIterators for all adjacency
 					local pAdjPlot = Map.PlotDirection(kPlot:GetX(), kPlot:GetY(), iDirection)
-					ct = ct + plotValue(pAdjPlot)					
+					if pAdjPlot ~= nil then ct = ct + plotValue(pAdjPlot) end				
 				end
 				if ct > 6 then -- requires at least one adjacent natural wonder
 					kPlot:SetImprovementType(consa4)
@@ -192,7 +194,7 @@ function ModifyConsAreaYields(playerID)
 end
 GameEvents.PlayerDoTurn.Add(ModifyConsAreaYields)
 -- end TopHatPaladin code
-function plotValue(plot)
+function plotValue(plot) -- TODO: DLL support properly checking if it's a natural wonder
 	local t = plot:GetImprovementType()
 	-- check if it's a natural wonder
 	if t == -1 and plot:GetFeatureType() > iFeatureFallout then return nwValue end
@@ -201,13 +203,13 @@ function plotValue(plot)
 	return 0	
 end
 function isConservationArea(t)
-	if t == consa or t == consa2 or t == consa3 or t == consa4 then return 1 end
-	return 0
+	if (t == consa) or (t == consa2) or (t == consa3) or (t == consa4) then return true
+	else return false end
 end
 function playerHasAnyConservationAreas(player)
-	if player:GetImprovementCount(consa) > 0 then return 1
-	elseif player:GetImprovementCount(consa2) > 0 then return 1
-	elseif player:GetImprovementCount(consa3) > 0 then return 1
-	elseif player:GetImprovementCount(consa4) > 0 then return 1 end
-	return 0
+	if player:GetImprovementCount(consa) > 0 then return true
+	elseif player:GetImprovementCount(consa2) > 0 then return true
+	elseif player:GetImprovementCount(consa3) > 0 then return true
+	elseif player:GetImprovementCount(consa4) > 0 then return true
+	else return false end
 end
