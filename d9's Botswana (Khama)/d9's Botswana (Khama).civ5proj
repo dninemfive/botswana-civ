@@ -84,11 +84,6 @@ UI: Conservation Area: Generates +1 Culture and Gold. +1 Culture if adjacent to 
         <Type>UpdateDatabase</Type>
         <FileName>Art/Atlases.xml</FileName>
       </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateUserData</Type>
-        <FileName>D9BotsLeaderscene.xml</FileName>
-      </Action>
     </ModActions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
